@@ -24,7 +24,9 @@ import UtilitiesHelpers from './example-pages/UtilitiesHelpers';
 import RegularTables1 from './example-pages/RegularTables1';
 import RegularTables4 from './example-pages/RegularTables4';
 import FormsControls from './example-pages/FormsControls';
-import Home from './Home';
+import Home from './webapp-pages/Home';
+import SignIn from './webapp-pages/SignIn';
+import SignUp from './webapp-pages/SignUp';
 
 const ListGroups = lazy(() => import('./example-pages/ListGroups'));
 const Accordions = lazy(() => import('./example-pages/Accordions'));
@@ -34,9 +36,9 @@ const Carousels = lazy(() => import('./example-pages/Carousels'));
 const Popovers = lazy(() => import('./example-pages/Popovers'));
 const Tabs = lazy(() => import('./example-pages/Tabs'));
 const Cards3 = lazy(() => import('./example-pages/Cards3'));
-const LandingPage = lazy(() => import('./example-pages/LandingPage'));
 const Maps = lazy(() => import('./example-pages/Maps'));
 const ApexCharts = lazy(() => import('./example-pages/ApexCharts'));
+const LandingPage = lazy(() => import('./example-pages/LandingPage'));
 
 const Routes = () => {
   const location = useLocation();
@@ -68,9 +70,7 @@ const Routes = () => {
         <Suspense
           fallback={
             <div className="d-flex align-items-center vh-100 justify-content-center text-center font-weight-bold font-size-lg py-3">
-              <div className="w-50 mx-auto">
-                Please wait while we load the live preview examples
-              </div>
+              <div className="w-50 mx-auto">Loading...</div>
             </div>
           }>
           <Switch>
@@ -78,6 +78,8 @@ const Routes = () => {
             <Route
               path={[
                 '/Home',
+                '/SignIn',
+                '/SignUp',
                 '/Buttons',
                 '/Dropdowns',
                 '/NavigationMenus',
@@ -111,6 +113,8 @@ const Routes = () => {
                     variants={pageVariants}
                     transition={pageTransition}>
                     <Route path="/Home" component={Home} />
+                    <Route path="/SignIn" component={SignIn} />
+                    <Route path="/SignUp" component={SignUp} />
                     <Route path="/Buttons" component={Buttons} />
                     <Route path="/Dropdowns" component={Dropdowns} />
                     <Route
