@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Digital-Inclusion-Challenge-2020/static/css/main.f6392903.chunk.css",
-    "main.js": "/Digital-Inclusion-Challenge-2020/static/js/main.8552fcde.chunk.js",
+    "main.js": "/Digital-Inclusion-Challenge-2020/static/js/main.c776b299.chunk.js",
     "runtime-main.js": "/Digital-Inclusion-Challenge-2020/static/js/runtime-main.b51b4d44.js",
     "static/js/2.ae900928.chunk.js": "/Digital-Inclusion-Challenge-2020/static/js/2.ae900928.chunk.js",
     "index.html": "/Digital-Inclusion-Challenge-2020/index.html",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b51b4d44.js",
     "static/js/2.ae900928.chunk.js",
     "static/css/main.f6392903.chunk.css",
-    "static/js/main.8552fcde.chunk.js"
+    "static/js/main.c776b299.chunk.js"
   ]
 }
