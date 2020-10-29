@@ -22,82 +22,17 @@ class Footer extends Component {
       <Fragment>
         <div className="bg-first py-5">
           <div>
-            <Container maxWidth="md" className="text-center">
-              <h1 className="display-3 mb-4 text-white font-weight-bold">
-                Stay up to date
-              </h1>
-              <p className="font-size-lg text-white-50">
-                Follow us on any of our social media accounts to find out when
-                we release new products or updates.
-              </p>
-            </Container>
             <div className="divider border-2 d-sm-none d-md-block rounded-circle border-white bg-white opacity-1 mx-auto mb-4 mt-5 w-50" />
             <div className="d-flex justify-content-center">
-              <Tooltip arrow title="Facebook">
+              <Tooltip arrow title="LinkdIn">
                 <IconButton
                   className="nav-link text-white-50"
-                  href="https:&#x2F;&#x2F;www.facebook.com&#x2F;UiFort"
+                  href="https://www.linkedin.com/in/j3of0/"
                   rel="nofollow"
                   target="_blank">
                   <span className="btn-wrapper--icon">
                     <FontAwesomeIcon
-                      icon={['fab', 'facebook']}
-                      className="font-size-xxl"
-                    />
-                  </span>
-                </IconButton>
-              </Tooltip>
-              <Tooltip arrow title="Twitter">
-                <IconButton
-                  className="nav-link text-white-50"
-                  href="https:&#x2F;&#x2F;twitter.com&#x2F;uifort1"
-                  rel="nofollow"
-                  target="_blank">
-                  <span className="btn-wrapper--icon">
-                    <FontAwesomeIcon
-                      icon={['fab', 'twitter']}
-                      className="font-size-xxl"
-                    />
-                  </span>
-                </IconButton>
-              </Tooltip>
-              <Tooltip arrow title="Instagram">
-                <IconButton
-                  className="nav-link text-white-50"
-                  href="https:&#x2F;&#x2F;www.instagram.com&#x2F;uifort1"
-                  rel="nofollow"
-                  target="_blank">
-                  <span className="btn-wrapper--icon">
-                    <FontAwesomeIcon
-                      icon={['fab', 'instagram']}
-                      className="font-size-xxl"
-                    />
-                  </span>
-                </IconButton>
-              </Tooltip>
-              <Tooltip arrow title="Discord">
-                <IconButton
-                  className="nav-link text-white-50"
-                  href="https:&#x2F;&#x2F;discord.gg&#x2F;mddFBQX"
-                  rel="nofollow"
-                  target="_blank">
-                  <span className="btn-wrapper--icon">
-                    <FontAwesomeIcon
-                      icon={['fab', 'discord']}
-                      className="font-size-xxl"
-                    />
-                  </span>
-                </IconButton>
-              </Tooltip>
-              <Tooltip arrow title="Dribbble">
-                <IconButton
-                  className="nav-link text-white-50"
-                  href="https:&#x2F;&#x2F;dribbble.com&#x2F;UiFort"
-                  rel="nofollow"
-                  target="_blank">
-                  <span className="btn-wrapper--icon">
-                    <FontAwesomeIcon
-                      icon={['fab', 'dribbble']}
+                      icon={['fab', 'linkedin']}
                       className="font-size-xxl"
                     />
                   </span>
@@ -106,7 +41,7 @@ class Footer extends Component {
               <Tooltip arrow title="Github">
                 <IconButton
                   className="nav-link text-white-50"
-                  href="https:&#x2F;&#x2F;github.com&#x2F;uifort"
+                  href="https://github.com/JeffersonUCC/Digital-Inclusion-Challenge-2020"
                   rel="nofollow"
                   target="_blank">
                   <span className="btn-wrapper--icon">
@@ -132,7 +67,6 @@ class Footer extends Component {
                     </p>
                     <div id="mc_embed_signup">
                       <form
-                        action="https://gmail.us3.list-manage.com/subscribe/post?u=3ebc33a3d37f2278158d74721&amp;id=a122e673aa"
                         className="validate"
                         id="mc-embedded-subscribe-form"
                         method="post"

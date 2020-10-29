@@ -24,7 +24,7 @@ import UtilitiesHelpers from './example-pages/UtilitiesHelpers';
 import RegularTables1 from './example-pages/RegularTables1';
 import RegularTables4 from './example-pages/RegularTables4';
 import FormsControls from './example-pages/FormsControls';
-import Home from './webapp-pages/Home';
+import Activities from './webapp-pages/Activities';
 import SignIn from './webapp-pages/SignIn';
 import SignUp from './webapp-pages/SignUp';
 
@@ -38,7 +38,7 @@ const Tabs = lazy(() => import('./example-pages/Tabs'));
 const Cards3 = lazy(() => import('./example-pages/Cards3'));
 const Maps = lazy(() => import('./example-pages/Maps'));
 const ApexCharts = lazy(() => import('./example-pages/ApexCharts'));
-const LandingPage = lazy(() => import('./example-pages/LandingPage'));
+const LandingPage = lazy(() => import('./webapp-pages'));
 
 const Routes = () => {
   const location = useLocation();
@@ -77,7 +77,7 @@ const Routes = () => {
             <Redirect exact from="/" to="/LandingPage" />
             <Route
               path={[
-                '/Home',
+                '/Activities',
                 '/SignIn',
                 '/SignUp',
                 '/Buttons',
@@ -112,7 +112,7 @@ const Routes = () => {
                     exit="out"
                     variants={pageVariants}
                     transition={pageTransition}>
-                    <Route path="/Home" component={Home} />
+                    <Route path="/Activities" component={Activities} />
                     <Route path="/SignIn" component={SignIn} />
                     <Route path="/SignUp" component={SignUp} />
                     <Route path="/Buttons" component={Buttons} />

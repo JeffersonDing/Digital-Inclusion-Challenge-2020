@@ -14,7 +14,7 @@ const PresentationLayout = (props) => {
   return (
     <Fragment>
       <div className={clsx(contentBackground)}>
-        <Header />
+          <Header />
         <Container maxWidth="xl" className="px-3 px-lg-5">
           {children}
         </Container>

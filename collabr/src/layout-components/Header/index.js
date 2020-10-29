@@ -1,19 +1,13 @@
 import React, { Fragment, Component } from 'react';
-
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { Fab, AppBar, Tooltip } from '@material-ui/core';
-
+import { Grid, Button, AppBar, Tooltip } from '@material-ui/core';
 import { connect } from 'react-redux';
-
 import projectLogo from '../../assets/images/react.svg';
-
 class Header extends Component {
   render() {
     let { headerShadow } = this.props;
-
     return (
       <Fragment>
         <div className="header-nav-wrapper header-nav-wrapper-lg" />
@@ -24,51 +18,84 @@ class Header extends Component {
             'app-header header-nav-wrapper header-nav-wrapper-lg w-100 navbar-dark d-flex align-items-center justify-content-between',
             { 'app-header--shadow': headerShadow }
           )}>
-          <Tooltip
-            arrow
-            title="Enjoy a well built Carolina UI Kit"
-            placement="bottom">
+          <Tooltip arrow title="CollabR Home" placement="bottom">
             <div className="nav-logo">
-              <Link to="/" title="Carolina React UI Kit with Material-UI Free">
+              <Link to="/" title="Home">
                 <i>
-                  <img
-                    alt="Carolina React UI Kit with Material-UI Free"
-                    src={projectLogo}
-                  />
+                  <img alt="CollabR Logo" src={projectLogo} />
                 </i>
               </Link>
             </div>
           </Tooltip>
-          <div>
-            <Tooltip
-              arrow
-              title="Download Carolina React UI Kit with Material-UI Free"
-              placement="bottom">
-              <Fab
-                size="small"
-                color="secondary"
-                className="ml-3"
-                href="https://uifort.com/template/carolina-react-ui-kit-material-ui-free"
-                target="_blank">
-                <FontAwesomeIcon icon={['fas', 'download']} />
-              </Fab>
-            </Tooltip>
-            <Tooltip
-              arrow
-              title="Learn more about Carolina React UI Kit Material-UI PRO version"
-              placement="bottom">
-              <Fab
-                href="https://uifort.com/template/carolina-react-ui-kit-material-ui-pro"
-                target="_blank"
-                size="small"
-                color="default"
-                className="ml-3">
-                <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
-              </Fab>
-            </Tooltip>
+          <div className="header-nav-menu d-none d-lg-block">
+            <div className="d-flex justify-content-center">
+              <Link>
+                <Button
+                  color="inherit"
+                  className="text-white ml-4 px-4 py-2 text-capitalize font-size-xl">
+                  <FontAwesomeIcon
+                    icon={['fas', 'home']}
+                    className="font-size-xl pr-1"
+                  />
+                  Home
+                </Button>
+              </Link>
+              <Link to="/Activities">
+                <Button
+                  size="large"
+                  color="inherit"
+                  className="text-white ml-4 px-4 py-2 text-capitalize font-size-xl">
+                  <FontAwesomeIcon
+                    icon={['fas', 'book']}
+                    className="font-size-xl pr-1"
+                  />
+                  Activities
+                </Button>
+              </Link>
+              <Link>
+                <Button
+                  size="large"
+                  color="inherit"
+                  className="text-white ml-4 px-4 py-2 text-capitalize font-size-xl">
+                  <FontAwesomeIcon
+                    icon={['fas', 'users']}
+                    className="font-size-xl pr-1"
+                  />
+                  Community
+                </Button>
+              </Link>
+              <Link>
+                <Button
+                  size="large"
+                  color="inherit"
+                  className="text-white ml-4 px-4 py-2 text-capitalize font-size-xl">
+                  <FontAwesomeIcon
+                    icon={['fas', 'info-circle']}
+                    className="font-size-xl pr-1"
+                  />
+                  About
+                </Button>
+              </Link>
+
+              <Grid container justify="flex-end">
+                <Link to="/signIn">
+                  <Button
+                    variant="contained"
+                    size="medium"
+                    color="secondary"
+                    className="text-white text-capitalize">
+                    <FontAwesomeIcon
+                      icon={['fas', 'columns']}
+                      className="font-size-xl pr-1"
+                    />
+                    DashBoard
+                  </Button>
+                </Link>
+              </Grid>
+            </div>
           </div>
         </AppBar>
-      </Fragment>
+        </Fragment>
     );
   }
 }
