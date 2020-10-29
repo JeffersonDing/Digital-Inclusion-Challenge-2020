@@ -4,7 +4,8 @@ class PageTitle extends Component {
   render() {
     return (
       <Fragment>
-        <div className="mb-5">
+        <br/><br/><br/>
+        <div className="mb-5 mt-5">
           <h1 className="display-3 mb-3 font-weight-bold text-capitalize">
             {this.props.titleHeading}
           </h1>

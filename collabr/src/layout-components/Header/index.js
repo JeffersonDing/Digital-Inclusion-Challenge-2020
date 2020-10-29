@@ -29,7 +29,7 @@ class Header extends Component {
           </Tooltip>
           <div className="header-nav-menu d-none d-lg-block">
             <div className="d-flex justify-content-center">
-              <Link>
+              <Link to='/'>
                 <Button
                   color="inherit"
                   className="text-white ml-4 px-4 py-2 text-capitalize font-size-xl">
@@ -52,7 +52,7 @@ class Header extends Component {
                   Activities
                 </Button>
               </Link>
-              <Link>
+              <Link to='/Community'>
                 <Button
                   size="large"
                   color="inherit"
@@ -64,7 +64,7 @@ class Header extends Component {
                   Community
                 </Button>
               </Link>
-              <Link>
+              <Link to='/About'>
                 <Button
                   size="large"
                   color="inherit"
