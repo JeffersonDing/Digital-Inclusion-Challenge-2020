@@ -5,7 +5,7 @@ import { Container, Button, Tooltip } from '@material-ui/core';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import hero8 from '../assets/images/hero-bg/hero-8.jpg';
+import hero8 from '../assets/images/hero-bg/education.jpg';
 const LandingPage = () => {
   return (
     <Fragment>

@@ -14,7 +14,7 @@ import SignIn from './webapp-pages/SignIn';
 import SignUp from './webapp-pages/SignUp';
 import LandingPage from './webapp-pages/LandingPage';
 import Dashboard from './webapp-pages/Dashboard';
-
+import Community from './webapp-pages/Community';
 const Routes = () => {
   const location = useLocation();
 
@@ -56,7 +56,8 @@ const Routes = () => {
                 '/Activities',
                 '/SignIn',
                 '/SignUp',
-                '/Dashboard'
+                '/Dashboard',
+                '/Community'
               ]}>
               <PresentationLayout>
                 <Switch location={location} key={location.pathname}>
@@ -71,6 +72,7 @@ const Routes = () => {
                     <Route path="/Activities" component={Activities} />
                     <Route path="/SignIn" component={SignIn} />
                     <Route path="/SignUp" component={SignUp} />
+                    <Route path="/Community" component={Community} />
                   </motion.div>
                 </Switch>
               </PresentationLayout>

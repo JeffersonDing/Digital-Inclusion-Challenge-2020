@@ -2,30 +2,15 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+import { Link } from 'react-router-dom';
+import ActivityCard from '../webapp-components/ActivityCard';
+import Copyright from '../webapp-components/Copyright';
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -56,10 +41,11 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6)
+  },
+  button: {
+    margin: theme.spacing(4)
   }
 }));
-
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Activities() {
   const classes = useStyles();
@@ -71,7 +57,7 @@ export default function Activities() {
         <Toolbar>
           <CameraIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
-            Album layout
+            Projects and Activities
           </Typography>
         </Toolbar>
       </AppBar>
@@ -85,29 +71,39 @@ export default function Activities() {
               align="center"
               color="textPrimary"
               gutterBottom>
-              Album layout
+              Projects and Activities
             </Typography>
             <Typography
               variant="h5"
               align="center"
               color="textSecondary"
               paragraph>
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              Check out our new projects and activities on varous subjects! Find
+              a pool and hop in! Meet new students and collaborate and socialyze
+              on amazing projects and func activities!
             </Typography>
             <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
-                </Grid>
+              <Grid container spacing={4} justify="center">
+                <Link to="/Community">
+                  <Grid item>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      className={classes.button}>
+                      Community
+                    </Button>
+                  </Grid>
+                </Link>
+                <Link to="/SignIn">
+                  <Grid item>
+                    <Button
+                      variant="outlined"
+                      color="primary"
+                      className={classes.button}>
+                      My Activities
+                    </Button>
+                  </Grid>
+                </Link>
               </Grid>
             </div>
           </Container>
@@ -115,34 +111,45 @@ export default function Activities() {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
+            <ActivityCard
+              data={{
+                imgurl: "https://cdn.cnn.com/cnnnext/dam/assets/200416164101-3-underscored-creative-writing-lead-super-169.jpg",
+                heading: 'Writing',
+                content: 'Lorum Ipsum'
+              }}
+            />
+            <ActivityCard
+              data={{ 
+                imgurl: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_648521078_2000136020009280129_393608.jpg",
+                heading: 'Music', 
+                content: 'Lorum Ipsum' }}
+            />
+            <ActivityCard
+              data={{ 
+                imgurl: "https://www.dataiku.com/wp-content/uploads/2019/10/chris-ried-ieic5Tq8YMk-unsplash-1618x1080.jpg", 
+                heading: 'Coding', 
+                content: 'Lorum Ipsum' }}
+            />
+            <ActivityCard
+              data={{ 
+                imgurl: "https://portugalinews.eu/wp-content/uploads/2018/09/film.jpg", 
+                heading: 'Film', 
+                content: 'Lorum Ipsum' }}
+            />
+            <ActivityCard
+              data={{
+                imgurl: "https://mymodernmet.com/wp/wp-content/uploads/2019/03/elements-of-art-6.jpg",
+                heading: 'Visual Art',
+                content: 'Lorum Ipsum'
+              }}
+            />
+            <ActivityCard
+              data={{
+                imgurl: "https://pro2-bar-s3-cdn-cf1.myportfolio.com/000909172f3cfec3f44bf971f9bfe486/c2a78af4-0920-48f1-9075-74d4e70bcd2f_car_202x158.png?h=2d924768f1f2722149817b3e25befe89",
+                heading: 'More Comming Soon...',
+                content: 'Lorum Ipsum'
+              }}
+            />
           </Grid>
         </Container>
       </main>

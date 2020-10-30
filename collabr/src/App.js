@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import configureStore from './config/configureStore';
 import { Provider } from 'react-redux';
 import Routes from './Routes';
@@ -259,12 +259,12 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
           <CssBaseline />
           <ScrollToTop>
             <Routes />
           </ScrollToTop>
-        </BrowserRouter>
+        </HashRouter>
       </Provider>
     );
   }

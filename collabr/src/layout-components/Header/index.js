@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Grid, Button, AppBar, Tooltip } from '@material-ui/core';
 import { connect } from 'react-redux';
-import projectLogo from '../../assets/images/react.svg';
+import projectLogo from '../../assets/favicon/favicon-1.png';
 class Header extends Component {
   render() {
     let { headerShadow } = this.props;
