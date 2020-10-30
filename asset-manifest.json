@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Digital-Inclusion-Challenge-2020/static/css/main.f6392903.chunk.css",
-    "main.js": "/Digital-Inclusion-Challenge-2020/static/js/main.dec0c15d.chunk.js",
+    "main.js": "/Digital-Inclusion-Challenge-2020/static/js/main.67850eac.chunk.js",
     "runtime-main.js": "/Digital-Inclusion-Challenge-2020/static/js/runtime-main.b51b4d44.js",
     "static/css/2.f545d21b.chunk.css": "/Digital-Inclusion-Challenge-2020/static/css/2.f545d21b.chunk.css",
     "static/js/2.c5626a2f.chunk.js": "/Digital-Inclusion-Challenge-2020/static/js/2.c5626a2f.chunk.js",
@@ -10,13 +10,13 @@
     "static/media/base.scss": "/Digital-Inclusion-Challenge-2020/static/media/bg5.19d6dba8.jpg",
     "static/media/avatar3.ab860198.jpg": "/Digital-Inclusion-Challenge-2020/static/media/avatar3.ab860198.jpg",
     "static/media/education.9b1529d2.jpg": "/Digital-Inclusion-Challenge-2020/static/media/education.9b1529d2.jpg",
-    "static/media/react.0c7567c6.svg": "/Digital-Inclusion-Challenge-2020/static/media/react.0c7567c6.svg"
+    "static/media/favicon-1.b6909374.png": "/Digital-Inclusion-Challenge-2020/static/media/favicon-1.b6909374.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b51b4d44.js",
     "static/css/2.f545d21b.chunk.css",
     "static/js/2.c5626a2f.chunk.js",
     "static/css/main.f6392903.chunk.css",
-    "static/js/main.dec0c15d.chunk.js"
+    "static/js/main.67850eac.chunk.js"
   ]
 }
