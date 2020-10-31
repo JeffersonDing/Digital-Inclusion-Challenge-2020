@@ -113,41 +113,54 @@ export default function Activities() {
           <Grid container spacing={4}>
             <ActivityCard
               data={{
-                imgurl: "https://cdn.cnn.com/cnnnext/dam/assets/200416164101-3-underscored-creative-writing-lead-super-169.jpg",
+                imgurl:
+                  'https://cdn.cnn.com/cnnnext/dam/assets/200416164101-3-underscored-creative-writing-lead-super-169.jpg',
                 heading: 'Writing',
-                content: 'Lorum Ipsum'
+                content:
+                  'Love creative writing? Join and mess around with some sick ideas!',
+                to: '/Writing'
               }}
             />
             <ActivityCard
-              data={{ 
-                imgurl: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_648521078_2000136020009280129_393608.jpg",
-                heading: 'Music', 
-                content: 'Lorum Ipsum' }}
-            />
-            <ActivityCard
-              data={{ 
-                imgurl: "https://www.dataiku.com/wp-content/uploads/2019/10/chris-ried-ieic5Tq8YMk-unsplash-1618x1080.jpg", 
-                heading: 'Coding', 
-                content: 'Lorum Ipsum' }}
-            />
-            <ActivityCard
-              data={{ 
-                imgurl: "https://portugalinews.eu/wp-content/uploads/2018/09/film.jpg", 
-                heading: 'Film', 
-                content: 'Lorum Ipsum' }}
+              data={{
+                imgurl:
+                  'https://www.incimages.com/uploaded_files/image/1920x1080/getty_648521078_2000136020009280129_393608.jpg',
+                heading: 'Music',
+                content:
+                  'Damn, have you ever wanted to drop some sick beats with your friends?'
+              }}
             />
             <ActivityCard
               data={{
-                imgurl: "https://mymodernmet.com/wp/wp-content/uploads/2019/03/elements-of-art-6.jpg",
+                imgurl:
+                  'https://www.dataiku.com/wp-content/uploads/2019/10/chris-ried-ieic5Tq8YMk-unsplash-1618x1080.jpg',
+                heading: 'Coding',
+                content: '"Im no hacker, but I do code"',
+                to: '/Coding'
+              }}
+            />
+            <ActivityCard
+              data={{
+                imgurl:
+                  'https://portugalinews.eu/wp-content/uploads/2018/09/film.jpg',
+                heading: 'Film',
+                content: 'Why not try to be the next Leonardo Decaprio?'
+              }}
+            />
+            <ActivityCard
+              data={{
+                imgurl:
+                  'https://mymodernmet.com/wp/wp-content/uploads/2019/03/elements-of-art-6.jpg',
                 heading: 'Visual Art',
-                content: 'Lorum Ipsum'
+                content: 'Get those creative brain cells to work! '
               }}
             />
             <ActivityCard
               data={{
-                imgurl: "https://pro2-bar-s3-cdn-cf1.myportfolio.com/000909172f3cfec3f44bf971f9bfe486/c2a78af4-0920-48f1-9075-74d4e70bcd2f_car_202x158.png?h=2d924768f1f2722149817b3e25befe89",
+                imgurl:
+                  'https://pro2-bar-s3-cdn-cf1.myportfolio.com/000909172f3cfec3f44bf971f9bfe486/c2a78af4-0920-48f1-9075-74d4e70bcd2f_car_202x158.png?h=2d924768f1f2722149817b3e25befe89',
                 heading: 'More Comming Soon...',
-                content: 'Lorum Ipsum'
+                content: 'Many more criterias will be added! Enjoy!'
               }}
             />
           </Grid>

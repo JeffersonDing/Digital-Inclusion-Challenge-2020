@@ -31,6 +31,7 @@ class Header extends Component {
             <div className="d-flex justify-content-center">
               <Link to='/'>
                 <Button
+                  size="large"
                   color="inherit"
                   className="text-white ml-4 px-4 py-2 text-capitalize font-size-xl">
                   <FontAwesomeIcon

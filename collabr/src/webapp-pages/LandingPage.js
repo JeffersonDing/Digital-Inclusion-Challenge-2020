@@ -23,7 +23,7 @@ const LandingPage = () => {
                   <div className="text-center">
                     <div className="px-4 px-sm-0 text-white mt-4">
                       <h1 className="display-2 mb-4 font-weight-bold">
-                        CollabR
+                        CollabR™
                       </h1>
                       <p className="font-size-xl text-white-50 mb-3">
                         While we may use the word “unprecedented” to describe

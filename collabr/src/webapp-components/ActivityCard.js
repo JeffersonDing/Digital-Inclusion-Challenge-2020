@@ -7,6 +7,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
 import CardMedia from '@material-ui/core/CardMedia';
+import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2)
@@ -55,9 +56,11 @@ export default function ActivityCard(props) {
           <Typography>{props.data.content}</Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
-            More
-          </Button>
+          <Link to={props.data.to}>
+            <Button size="small" color="primary">
+              More
+            </Button>
+          </Link>
         </CardActions>
       </Card>
     </Grid>

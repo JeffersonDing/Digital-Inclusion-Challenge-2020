@@ -25,7 +25,7 @@ import avatar5 from '../../../assets/images/avatars/avatar5.jpg';
 import avatar6 from '../../../assets/images/avatars/avatar6.jpg';
 import avatar7 from '../../../assets/images/avatars/avatar7.jpg';
 
-export default function LivePreviewExample() {
+export default function LivePreviewExample(props) {
   const chart53Options = {
     chart: {
       toolbar: {
@@ -70,10 +70,10 @@ export default function LivePreviewExample() {
       <Card className="card-box mb-4 p-3 text-center">
         <div className="my-3">
           <h6 className="font-weight-bold font-size-lg mb-1 text-black">
-            My Friends
+            {props.data.title}
           </h6>
           <p className="text-black-50 mb-0">
-            Friends that you waved at...and waved back~!
+            {props.data.tagline}
           </p>
         </div>
         <div className="d-flex flex-row flex-wrap justify-content-center">

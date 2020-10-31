@@ -21,7 +21,7 @@ chatClient.setUser(
 const useStyles = makeStyles((theme) => ({
   center: {
     alignItems: 'center',
-    marginTop:theme.spacing(10)
+    marginTop: theme.spacing(10)
   }
 }));
 

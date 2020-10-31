@@ -13,9 +13,13 @@ export default function DashboardDefault() {
         titleHeading="Dashboard"
         titleDescription="CollabR Dashboard"
       />
-      <DashboardDefaultSection3 />
+      <DashboardDefaultSection3
+        data={{
+          title: 'My Friends',
+          tagline: 'Friends that you waved at...and waved back~!'
+        }}
+      />
       <DashboardDefaultSection2 />
-      
     </Fragment>
   );
 }
